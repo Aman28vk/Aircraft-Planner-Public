@@ -547,7 +547,7 @@ export const BoardView: React.FC<BoardViewProps> = ({
         )}
       </div>
 
-      {/* Board Content: Project Selection Prompt or Kanban DragDrop Board */}
+      {/* Board Content: Project Selection Prompt or Task DragDrop Board */}
       {!isProjectSelected ? (
         <div className="flex-1 overflow-y-auto p-6 md:p-10 flex flex-col items-center justify-start bg-navy-950/40">
           <div className="max-w-2xl w-full text-center mt-2 mb-8">
@@ -558,7 +558,7 @@ export const BoardView: React.FC<BoardViewProps> = ({
               Select an Aircraft Project
             </h2>
             <p className="text-sm text-slate-400 max-w-lg mx-auto leading-relaxed">
-              To view brackets, structure workflows, and manage operational tasks on the Kanban board, please select an aircraft / MSN project below.
+              To view brackets, structure workflows, and manage operational tasks on the Task Board, please select an aircraft / MSN project below.
             </p>
           </div>
 
@@ -597,7 +597,7 @@ export const BoardView: React.FC<BoardViewProps> = ({
                   </span>
                 </span>
                 <span className="text-xs text-slate-500 hidden sm:inline">
-                  Click any project card to open its Kanban board
+                  Click any project card to open its Task Board
                 </span>
               </div>
 

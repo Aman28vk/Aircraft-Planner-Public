@@ -23,7 +23,7 @@ Inspired by Microsoft Planner, tailored for commercial aerospace programs, teard
   - Completing predecessor tasks automatically transitions successor tasks from `WAITING` to `READY`.
   - Dispatches automated in-app notifications and transactional emails to assigned personnel.
 - **Planner-Inspired Views**:
-  - **Board View**: Kanban board grouped by Lifecycle Stage or Functional Team, drag & drop card movements, checklists preview with `2 / 4` progress counters, priority badges, and dependency locks.
+  - **Task Board**: Interactive card board grouped by Lifecycle Stage or Functional Team, drag & drop card movements, checklists preview with `2 / 4` progress counters, priority badges, and dependency locks.
   - **Grid View**: Dense spreadsheet table with sorting, filtering, inline status editing, column toggles, and instant CSV export.
   - **Timeline View**: Interactive Gantt schedule by aircraft stage and task with zoom controls (`Day`, `Week`, `Month`, `Quarter`).
   - **Calendar View**: Monthly schedule highlighting start/due dates, overdue milestones, and task drawers.

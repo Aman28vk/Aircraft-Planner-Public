@@ -66,7 +66,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       items: [
         { id: 'dashboard', label: 'Company Dashboard', icon: LayoutDashboard },
         { id: 'aircraft', label: 'Aircraft Fleet (MSN)', icon: Plane },
-        { id: 'board', label: 'Kanban Board', icon: Kanban, badge: 'Planner' },
+        { id: 'board', label: 'Task Board', icon: Kanban, badge: 'Planner' },
         { id: 'grid', label: 'Grid Table', icon: Table },
         { id: 'timeline', label: 'Timeline', icon: GitCommit, badge: 'Gantt' },
         { id: 'calendar', label: 'Calendar', icon: Calendar },
