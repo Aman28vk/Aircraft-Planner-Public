@@ -57,34 +57,10 @@ export const LoginView: React.FC<LoginViewProps> = ({ onSuccess }) => {
     {
       id: '33333333-3333-3333-3333-333333333333',
       name: 'Aman Kumar',
-      role: 'Aviation Lead & Company Admin',
+      role: 'Aviation Lead & System Administrator',
       org: 'Alaris Aerospace Systems',
       email: 'aman@alarisaero.com',
-      badge: 'Recommended Lead Persona',
-    },
-    {
-      id: '00000000-0000-0000-0000-000000000001',
-      name: 'Super Admin',
-      role: 'System Administrator',
-      org: 'Global Platform Control',
-      email: 'admin@system.com',
-      badge: 'Full Multi-Tenant Admin',
-    },
-    {
-      id: '11111111-1111-1111-1111-111111111111',
-      name: 'John Smith',
-      role: 'Project Manager',
-      org: 'Alaris Aerospace Systems',
-      email: 'john@alarisaero.com',
-      badge: 'Fleet Ops & Planning',
-    },
-    {
-      id: '44444444-4444-4444-4444-444444444444',
-      name: 'Sarah Connor',
-      role: 'Fleet Specialist',
-      org: 'Alaris Aerospace Systems',
-      email: 'sarah@alarisaero.com',
-      badge: 'Technical & RO Team',
+      badge: 'System Administrator (Full Access)',
     },
   ];
 
@@ -259,30 +235,9 @@ export const LoginView: React.FC<LoginViewProps> = ({ onSuccess }) => {
               className="w-full py-2.5 px-4 bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 hover:from-sky-500 hover:to-indigo-500 text-white text-xs font-bold rounded-xl shadow-lg shadow-sky-600/30 flex items-center justify-center gap-2 transition-all cursor-pointer transform hover:-translate-y-0.5"
             >
               <Sparkles className="w-4 h-4 text-sky-200" />
-              <span>Launch Live Demo as Aman Kumar (Full Access)</span>
+              <span>Launch Live Demo as Aman Kumar (Admin)</span>
               <ArrowRight className="w-4 h-4 text-sky-200" />
             </button>
-
-            <div className="pt-2 border-t border-navy-800/80">
-              <div className="text-[11px] font-semibold text-slate-400 mb-1.5">
-                Or enter as another pre-configured persona:
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                {demoPersonas.slice(1).map((p) => (
-                  <button
-                    key={p.id}
-                    type="button"
-                    onClick={() => handleQuickLogin(p.id)}
-                    className="p-2 bg-navy-950/80 hover:bg-navy-800 border border-navy-700/80 hover:border-sky-500/50 rounded-lg text-left transition-all cursor-pointer group"
-                  >
-                    <div className="text-xs font-bold text-slate-200 group-hover:text-sky-300 truncate">
-                      {p.name}
-                    </div>
-                    <div className="text-[10px] text-slate-400 truncate">{p.role}</div>
-                  </button>
-                ))}
-              </div>
-            </div>
           </div>
 
           {/* Mode Switcher Tabs */}

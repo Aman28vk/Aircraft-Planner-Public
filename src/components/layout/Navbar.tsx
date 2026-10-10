@@ -394,8 +394,8 @@ export const Navbar: React.FC<NavbarProps> = ({
 
                       {/* Switch Persona Section */}
                       <div className="px-2 py-1.5 text-[10px] font-bold text-slate-400 uppercase tracking-wider border-b border-slate-800 flex items-center justify-between">
-                        <span>Switch Demo Persona ({profiles.length})</span>
-                        <span className="text-[9px] text-sky-400 font-mono">1-Click Switch</span>
+                        <span>Active Administrator</span>
+                        <span className="text-[9px] text-sky-400 font-mono">Full Access</span>
                       </div>
 
                       <div className="divide-y divide-slate-800/50 max-h-56 overflow-y-auto pr-0.5">
@@ -469,7 +469,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </>
             ) : (
               <button
-                onClick={() => setCurrentUser('11111111-1111-1111-1111-111111111111')}
+                onClick={() => setCurrentUser('33333333-3333-3333-3333-333333333333')}
                 className="px-3 py-1.5 bg-sky-600 hover:bg-sky-500 text-white rounded-lg text-xs font-semibold shadow-md"
               >
                 Sign In

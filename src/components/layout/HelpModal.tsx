@@ -50,7 +50,7 @@ export const HelpModal: React.FC<HelpModalProps> = ({ isOpen, onClose }) => {
             <div className="flex items-start gap-2">
               <span className="w-5 h-5 rounded-full bg-sky-500/20 text-sky-300 font-bold flex items-center justify-center shrink-0">2</span>
               <div>
-                Observe <strong>Task 1: Technical Acceptance</strong> (Asset, John Smith) is <span className="text-sky-400 font-medium">IN PROGRESS</span>.
+                Observe <strong>Task 1: Technical Acceptance</strong> (Asset, Aman Kumar) is <span className="text-sky-400 font-medium">IN PROGRESS</span>.
                 Notice <strong>Task 2: Harvest List Preparation</strong> (Asset, Aman Kumar) is <span className="text-slate-400 font-medium">WAITING</span>.
               </div>
             </div>
@@ -82,7 +82,7 @@ export const HelpModal: React.FC<HelpModalProps> = ({ isOpen, onClose }) => {
             <div className="flex items-start gap-2">
               <span className="w-5 h-5 rounded-full bg-purple-500/20 text-purple-300 font-bold flex items-center justify-center shrink-0">6</span>
               <div>
-                Complete Task 2 as Aman &bull; Observe Task 3 (Teardown Coordination, Sarah Connor) automatically unlocks and sends Sarah an email notification!
+                Complete Task 2 as Aman &bull; Observe Task 3 (Teardown Coordination) automatically unlocks and notifies Aman!
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ export const HelpModal: React.FC<HelpModalProps> = ({ isOpen, onClose }) => {
               <Shield className="w-4 h-4 text-emerald-400" /> Role-Based Access
             </div>
             <p className="text-xs text-slate-400">
-              Use the top-right user switcher to test <strong>Super Admin</strong>, <strong>Team Admin</strong>, <strong>Team Member</strong>, and <strong>Viewer</strong> access rules.
+              Logged in as <strong>Aman Kumar (Super Admin)</strong> with complete full-stack platform control across all operations.
             </p>
           </div>
 

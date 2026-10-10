@@ -978,7 +978,7 @@ export const UsersView: React.FC<UsersViewProps> = ({ onOpenTaskModal }) => {
             <input
               type="text"
               required
-              placeholder="e.g. John Smith"
+              placeholder="e.g. Alex Morgan"
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
               className="w-full bg-navy-950 border border-navy-700 rounded-xl p-2.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-sky-500"
@@ -990,7 +990,7 @@ export const UsersView: React.FC<UsersViewProps> = ({ onOpenTaskModal }) => {
             <input
               type="email"
               required
-              placeholder="e.g. john@alarisaero.com"
+              placeholder="e.g. alex@alarisaero.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full bg-navy-950 border border-navy-700 rounded-xl p-2.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-sky-500"

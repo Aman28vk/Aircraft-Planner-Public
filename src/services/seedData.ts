@@ -52,8 +52,8 @@ export const INITIAL_COMPANIES: Company[] = [
     expiry_date: '2026-10-15',
     plan_tier: 'PROFESSIONAL',
     max_seats: 15,
-    contact_person: 'Sarah Connor',
-    contact_email: 'sarah@companyb.com',
+    contact_person: 'Fleet Operations Lead',
+    contact_email: 'operations@companyb.com',
     notes: 'Annual commercial leasing subscription. Up for renewal in October.',
     user_count: 1,
   },
@@ -76,46 +76,14 @@ export const INITIAL_COMPANIES: Company[] = [
 
 export const INITIAL_PROFILES: Profile[] = [
   {
-    id: '11111111-1111-1111-1111-111111111111',
-    email: 'admin@system.com',
-    full_name: 'Super Admin',
-    role: 'SUPER_ADMIN',
-    password: 'Amankumar',
-    job_title: 'Global Platform Administrator',
-    title: 'Global Platform Administrator',
-    phone: '+1 (555) 019-2831',
-    department: 'System Management',
-    status: 'ACTIVE',
-    is_active: true,
-    created_at: '2026-08-01T08:00:00Z',
-    last_login: '2026-09-21T18:00:00Z',
-  },
-  {
-    id: '22222222-2222-2222-2222-222222222222',
-    company_id: 'c1111111-1111-1111-1111-111111111111',
-    email: 'john@alarisaero.com',
-    full_name: 'John Smith',
-    role: 'COMPANY_ADMIN',
-    password: 'password123',
-    job_title: 'Asset Technical Lead & Company Admin',
-    title: 'Asset Technical Lead & Company Admin',
-    phone: '+1 (555) 019-4822',
-    department: 'Asset Management',
-    team_id: 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', // Asset Team
-    status: 'ACTIVE',
-    is_active: true,
-    created_at: '2026-08-01T08:00:00Z',
-    last_login: '2026-09-21T17:30:00Z',
-  },
-  {
     id: '33333333-3333-3333-3333-333333333333',
     company_id: 'c1111111-1111-1111-1111-111111111111',
     email: 'aman@alarisaero.com',
     full_name: 'Aman Kumar',
-    role: 'EMPLOYEE',
+    role: 'SUPER_ADMIN',
     password: 'password123',
-    job_title: 'Senior Project Specialist',
-    title: 'Senior Project Specialist',
+    job_title: 'Aviation Lead & System Administrator',
+    title: 'Aviation Lead & System Administrator',
     phone: '+1 (555) 019-9182',
     department: 'Asset & Operations',
     team_id: 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', // Asset Team
@@ -123,88 +91,6 @@ export const INITIAL_PROFILES: Profile[] = [
     is_active: true,
     created_at: '2026-08-01T08:00:00Z',
     last_login: '2026-09-21T18:20:00Z',
-  },
-  {
-    id: '44444444-4444-4444-4444-444444444444',
-    company_id: 'c2222222-2222-2222-2222-222222222222',
-    email: 'sarah@companyb.com',
-    full_name: 'Sarah Connor',
-    role: 'COMPANY_ADMIN',
-    password: 'password123',
-    job_title: 'Teardown Operations Director & Company Admin',
-    title: 'Teardown Operations Director & Company Admin',
-    phone: '+1 (555) 019-7721',
-    department: 'Teardown Logistics',
-    team_id: 'cccccccc-cccc-cccc-cccc-cccccccccccc', // Teardown Team
-    status: 'ACTIVE',
-    is_active: true,
-    created_at: '2026-08-01T08:00:00Z',
-    last_login: '2026-09-21T16:45:00Z',
-  },
-  {
-    id: '55555555-5555-5555-5555-555555555555',
-    company_id: 'c1111111-1111-1111-1111-111111111111',
-    email: 'michael@alarisaero.com',
-    full_name: 'Michael Chang',
-    role: 'EMPLOYEE',
-    password: 'password123',
-    job_title: 'Commercial Sales Director',
-    title: 'Commercial Sales Director',
-    phone: '+1 (555) 019-3382',
-    department: 'Sales & Marketing',
-    team_id: 'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb', // Sales Team
-    status: 'ACTIVE',
-    is_active: true,
-    created_at: '2026-08-01T08:00:00Z',
-    last_login: '2026-09-21T14:10:00Z',
-  },
-  {
-    id: '66666666-6666-6666-6666-666666666666',
-    company_id: 'c1111111-1111-1111-1111-111111111111',
-    email: 'david@alarisaero.com',
-    full_name: 'David Miller',
-    role: 'EMPLOYEE',
-    password: 'password123',
-    job_title: 'Warehouse & Logistics Manager',
-    title: 'Warehouse & Logistics Manager',
-    phone: '+1 (555) 019-1199',
-    department: 'Warehouse Operations',
-    team_id: 'dddddddd-dddd-dddd-dddd-dddddddddddd', // Warehouse Team
-    status: 'ACTIVE',
-    is_active: true,
-    created_at: '2026-08-01T08:00:00Z',
-    last_login: '2026-09-20T19:00:00Z',
-  },
-  {
-    id: '77777777-7777-7777-7777-777777777777',
-    company_id: 'c1111111-1111-1111-1111-111111111111',
-    email: 'emily@alarisaero.com',
-    full_name: 'Emily Watson',
-    role: 'EMPLOYEE',
-    password: 'password123',
-    job_title: 'Compliance Auditor',
-    title: 'Compliance Auditor',
-    phone: '+1 (555) 019-4455',
-    department: 'Finance & Compliance',
-    team_id: 'ffffffff-ffff-ffff-ffff-ffffffffffff', // Finance Team
-    status: 'ACTIVE',
-    is_active: true,
-    created_at: '2026-08-01T08:00:00Z',
-    last_login: '2026-09-21T11:20:00Z',
-  },
-  {
-    id: '88888888-8888-8888-8888-888888888888',
-    company_id: 'c1111111-1111-1111-1111-111111111111',
-    email: 'disabled.employee@alarisaero.com',
-    full_name: 'Disabled User Test',
-    role: 'EMPLOYEE',
-    password: 'password123',
-    job_title: 'Former Inspector',
-    title: 'Former Inspector',
-    department: 'Technical',
-    status: 'DISABLED',
-    is_active: false,
-    created_at: '2026-08-01T08:00:00Z',
   },
 ];
 
@@ -215,7 +101,7 @@ export const INITIAL_TEAMS: Team[] = [
     code: 'ASSET',
     description: 'Aircraft documentation, OCCM, HT, technical evaluations, specification sheets, and records acceptance.',
     color: '#0284c7',
-    team_lead_id: '22222222-2222-2222-2222-222222222222', // John Smith
+    team_lead_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
     is_active: true,
     created_at: '2026-08-01T08:00:00Z',
   },
@@ -225,7 +111,7 @@ export const INITIAL_TEAMS: Team[] = [
     code: 'SALES',
     description: 'Part demand analysis, customer requirements, quotation, and sales confirmation.',
     color: '#10b981',
-    team_lead_id: '55555555-5555-5555-5555-555555555555', // Michael Chang
+    team_lead_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
     is_active: true,
     created_at: '2026-08-01T08:00:00Z',
   },
@@ -235,7 +121,7 @@ export const INITIAL_TEAMS: Team[] = [
     code: 'TEARDOWN',
     description: 'Teardown planning, facility contract, part harvesting, component removal, and scrap disposition.',
     color: '#f59e0b',
-    team_lead_id: '44444444-4444-4444-4444-444444444444', // Sarah Connor
+    team_lead_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
     is_active: true,
     created_at: '2026-08-01T08:00:00Z',
   },
@@ -245,7 +131,7 @@ export const INITIAL_TEAMS: Team[] = [
     code: 'WAREHOUSE',
     description: 'Receiving, visual inspection, EASA/FAA Form 1 tagging, and inventory storage.',
     color: '#8b5cf6',
-    team_lead_id: '66666666-6666-6666-6666-666666666666', // David Miller
+    team_lead_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
     is_active: true,
     created_at: '2026-08-01T08:00:00Z',
   },
@@ -255,7 +141,7 @@ export const INITIAL_TEAMS: Team[] = [
     code: 'TECH',
     description: 'Airworthiness Directive review, non-incident certs, engineering disposition, and engine health.',
     color: '#06b6d4',
-    team_lead_id: '22222222-2222-2222-2222-222222222222',
+    team_lead_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
     is_active: true,
     created_at: '2026-08-01T08:00:00Z',
   },
@@ -265,7 +151,7 @@ export const INITIAL_TEAMS: Team[] = [
     code: 'FINANCE',
     description: 'BAFO analysis, escrow funding, disassembly milestones disbursement, and accounting close.',
     color: '#ec4899',
-    team_lead_id: '77777777-7777-7777-7777-777777777777',
+    team_lead_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
     is_active: true,
     created_at: '2026-08-01T08:00:00Z',
   },
@@ -275,7 +161,7 @@ export const INITIAL_TEAMS: Team[] = [
     code: 'MGMT',
     description: 'Overall lifecycle strategy, joint-venture review, and high-level milestones.',
     color: '#64748b',
-    team_lead_id: '11111111-1111-1111-1111-111111111111',
+    team_lead_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
     is_active: true,
     created_at: '2026-08-01T08:00:00Z',
   },
@@ -402,7 +288,7 @@ export const INITIAL_AIRCRAFT: Aircraft[] = [
     location: 'Phoenix Goodyear (GYR)',
     current_stage_id: 's2222222-2222-2222-2222-222222222222', // 02 ACQUISITION
     notes: 'Flagship teardown project. High-value harvest package with dual engines and dual avionics suites.',
-    created_by: '11111111-1111-1111-1111-111111111111',
+    created_by: '33333333-3333-3333-3333-333333333333',
     created_at: '2026-08-15T09:00:00Z',
   },
   {
@@ -423,7 +309,7 @@ export const INITIAL_AIRCRAFT: Aircraft[] = [
     location: 'Pinal Airpark (MZJ)',
     current_stage_id: 's3333333-3333-3333-3333-333333333333', // 03 TEARDOWN PREP
     notes: 'Teardown partner confirmed. Pending final engine cut protocol.',
-    created_by: '11111111-1111-1111-1111-111111111111',
+    created_by: '33333333-3333-3333-3333-333333333333',
     created_at: '2026-07-10T10:00:00Z',
   },
   {
@@ -444,7 +330,7 @@ export const INITIAL_AIRCRAFT: Aircraft[] = [
     location: 'Victorville (VCV)',
     current_stage_id: 's1111111-1111-1111-1111-111111111111', // 01 BIDDING
     notes: 'Under BAFO evaluation. High engine cycle remaining.',
-    created_by: '11111111-1111-1111-1111-111111111111',
+    created_by: '33333333-3333-3333-3333-333333333333',
     created_at: '2026-09-01T11:00:00Z',
   },
 ];
@@ -579,8 +465,8 @@ export const INITIAL_TASKS: Task[] = [
     stage_id: 's2222222-2222-2222-2222-222222222222',
     project_bucket_id: 'pb-12345-02', // 02 ACQUISITION
     team_id: 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', // Asset
-    assigned_user_id: '22222222-2222-2222-2222-222222222222', // John Smith
-    created_by: '11111111-1111-1111-1111-111111111111',
+    assigned_user_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
+    created_by: '33333333-3333-3333-3333-333333333333',
     name: 'Technical Acceptance',
     description: 'Complete full on-site physical and technical records acceptance before release to teardown.',
     status: 'IN_PROGRESS',
@@ -602,7 +488,7 @@ export const INITIAL_TASKS: Task[] = [
     project_bucket_id: 'pb-12345-03', // 03 TEARDOWN PREPARATION
     team_id: 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa', // Asset
     assigned_user_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
-    created_by: '11111111-1111-1111-1111-111111111111',
+    created_by: '33333333-3333-3333-3333-333333333333',
     name: 'Harvest List Preparation',
     description: 'Prepare comprehensive component harvest list including part numbers, serial numbers, and tag requirements.',
     status: 'WAITING',
@@ -623,8 +509,8 @@ export const INITIAL_TASKS: Task[] = [
     stage_id: 's3333333-3333-3333-3333-333333333333',
     project_bucket_id: 'pb-12345-03', // 03 TEARDOWN PREPARATION
     team_id: 'cccccccc-cccc-cccc-cccc-cccccccccccc', // Teardown
-    assigned_user_id: '44444444-4444-4444-4444-444444444444', // Sarah Connor
-    created_by: '11111111-1111-1111-1111-111111111111',
+    assigned_user_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
+    created_by: '33333333-3333-3333-3333-333333333333',
     name: 'Teardown Coordination',
     description: 'Finalize agreement with teardown MRO shop, shipping crates, and tooling delivery.',
     status: 'WAITING',
@@ -645,7 +531,7 @@ export const INITIAL_TASKS: Task[] = [
     stage_id: 's5555555-5555-5555-5555-555555555555',
     project_bucket_id: 'pb-12345-05', // 05 TEARDOWN IN PROCESS
     team_id: 'cccccccc-cccc-cccc-cccc-cccccccccccc', // Teardown
-    assigned_user_id: '44444444-4444-4444-4444-444444444444', // Sarah Connor
+    assigned_user_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
     name: 'Teardown Execution & Part Removal',
     description: 'Perform physical airframe dismantling, engine drop, landing gear removal, and avionics extraction.',
     status: 'WAITING',
@@ -666,7 +552,7 @@ export const INITIAL_TASKS: Task[] = [
     stage_id: 's6666666-6666-6666-6666-666666666666',
     project_bucket_id: 'pb-12345-06', // 06 WAREHOUSE
     team_id: 'dddddddd-dddd-dddd-dddd-dddddddddddd', // Warehouse
-    assigned_user_id: '66666666-6666-6666-6666-666666666666', // David Miller
+    assigned_user_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
     name: 'Receiving & Inspection',
     description: 'Receive shipped parts at warehouse, complete receiving inspection, verify NIS certificates.',
     status: 'WAITING',
@@ -708,7 +594,7 @@ export const INITIAL_TASKS: Task[] = [
     stage_id: 's7777777-7777-7777-7777-777777777777',
     project_bucket_id: 'pb-12345-07', // 07 SALES
     team_id: 'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb', // Sales
-    assigned_user_id: '55555555-5555-5555-5555-555555555555', // Michael Chang
+    assigned_user_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
     name: 'Customer Requirement & Part Demand Analysis',
     description: 'Review airline customer RFQs against MSN 12345 harvest list and formulate pre-sale packages.',
     status: 'NOT_STARTED',
@@ -730,7 +616,7 @@ export const INITIAL_TASKS: Task[] = [
     stage_id: 's3333333-3333-3333-3333-333333333333',
     project_bucket_id: 'pb-12346-03',
     team_id: 'cccccccc-cccc-cccc-cccc-cccccccccccc',
-    assigned_user_id: '44444444-4444-4444-4444-444444444444',
+    assigned_user_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
     name: 'Teardown Shop Contract Finalization',
     description: 'Sign MRO facility agreement and insurance bonding.',
     status: 'IN_PROGRESS',
@@ -750,7 +636,7 @@ export const INITIAL_TASKS: Task[] = [
     stage_id: 's3333333-3333-3333-3333-333333333333',
     project_bucket_id: 'pb-12346-03',
     team_id: 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa',
-    assigned_user_id: '22222222-2222-2222-2222-222222222222',
+    assigned_user_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
     name: 'Harvest List Sign-off',
     description: 'Technical and sales review of Boeing harvest tags.',
     status: 'READY',
@@ -772,7 +658,7 @@ export const INITIAL_TASKS: Task[] = [
     stage_id: 's1111111-1111-1111-1111-111111111111',
     project_bucket_id: 'pb-12347-01',
     team_id: 'ffffffff-ffff-ffff-ffff-ffffffffffff',
-    assigned_user_id: '11111111-1111-1111-1111-111111111111',
+    assigned_user_id: '33333333-3333-3333-3333-333333333333', // Aman Kumar
     name: 'BAFO & Valuation Modeling',
     description: 'Compute Net Present Value of engine LLP cycles and residual airframe components.',
     status: 'IN_PROGRESS',

@@ -240,7 +240,7 @@ export const INITIAL_REPAIR_ORDERS: RepairOrderRow[] = [
   },
   {
     id: 'ro-row-005',
-    user_id: '22222222-2222-2222-2222-222222222222', // John
+    user_id: '33333333-3333-3333-3333-333333333333', // Aman
     company_id: 'c1111111-1111-1111-1111-111111111111',
     data: {
       ro_number: 'RO-8501',
@@ -261,7 +261,7 @@ export const INITIAL_REPAIR_ORDERS: RepairOrderRow[] = [
   },
   {
     id: 'ro-row-006',
-    user_id: '22222222-2222-2222-2222-222222222222', // John
+    user_id: '33333333-3333-3333-3333-333333333333', // Aman
     company_id: 'c1111111-1111-1111-1111-111111111111',
     data: {
       ro_number: 'RO-8502',
@@ -1241,11 +1241,24 @@ class StorageService {
             if (!parsed.repairOrders || parsed.repairOrders.length === 0) {
               parsed.repairOrders = INITIAL_REPAIR_ORDERS;
             }
-            const savedSessionUserId =
-              typeof localStorage !== 'undefined'
-                ? localStorage.getItem('ALM_ACTIVE_SESSION_USER_ID')
-                : null;
-            parsed.currentUserId = savedSessionUserId || '33333333-3333-3333-3333-333333333333';
+            // In demo mode: keep Aman Kumar as the sole admin profile
+            parsed.profiles = INITIAL_PROFILES;
+            parsed.currentUserId = '33333333-3333-3333-3333-333333333333';
+            if (parsed.tasks) {
+              parsed.tasks.forEach((t: any) => {
+                t.assigned_user_id = '33333333-3333-3333-3333-333333333333';
+              });
+            }
+            if (parsed.teams) {
+              parsed.teams.forEach((tm: any) => {
+                tm.team_lead_id = '33333333-3333-3333-3333-333333333333';
+              });
+            }
+            if (parsed.repairOrders) {
+              parsed.repairOrders.forEach((ro: any) => {
+                ro.user_id = '33333333-3333-3333-3333-333333333333';
+              });
+            }
             return parsed;
           }
         }
@@ -1271,7 +1284,7 @@ class StorageService {
           id: 'comm-1',
           task_id: 't1111111-1111-1111-1111-111111111111',
           aircraft_id: 'a1111111-1111-1111-1111-111111111111',
-          user_id: '22222222-2222-2222-2222-222222222222',
+          user_id: '33333333-3333-3333-3333-333333333333',
           content: 'Engine borescope report received from Lufthansa Technik. No life-limited part defects noted.',
           created_at: '2026-09-19T14:20:00Z',
         },
@@ -1322,9 +1335,9 @@ class StorageService {
         {
           id: 'act-1',
           aircraft_id: 'a1111111-1111-1111-1111-111111111111',
-          user_id: '11111111-1111-1111-1111-111111111111',
+          user_id: '33333333-3333-3333-3333-333333333333',
           action: 'AIRCRAFT_CREATED',
-          details: 'Super Admin initialized MSN 12345 lifecycle project.',
+          details: 'Aman Kumar initialized MSN 12345 lifecycle project.',
           created_at: '2026-08-15T09:00:00Z',
         },
       ],
